@@ -26,6 +26,7 @@ public class connectDB {
             con = DriverManager.getConnection(DB_URL,USERNAME,PASSWORD);
         } catch (SQLException ex) {
             Logger.getLogger(connectDB.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("ví dụ");
         }
         return con;
     }
